@@ -13,8 +13,5 @@ export const Task = sequelize.define('task', {
     done: {
         type: DataTypes.BOOLEAN,
         defaultValue: false
-    },
-    description: {
-        type: DataTypes.STRING
     }
 });
