@@ -1,4 +1,5 @@
 import {Project} from '../models/Project.js'
+import {Task} from '../models/Task.js'
 
 export const getProjects = async (req, res) => {
     try {
@@ -65,6 +66,22 @@ export const deleteProject = async (req, res) => {
         });
         res.sendStatus(204); // 204: Todo OK, pero no muestra ningún mensaje
     } catch (error) {
-        res.status(500).json({message: error.message});
+        return res.status(500).json({message: error.message});
+    }
+};
+
+export const getProjectTasks = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        const tasks = await Task.findAll({
+            where: {
+                projectId: id
+            }
+        })
+
+        res.status(200).json(tasks);
+    } catch (error) {
+        return res.status(500).json({message: error.message});
     }
 };
