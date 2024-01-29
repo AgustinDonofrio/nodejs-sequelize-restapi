@@ -23,7 +23,8 @@ El proyecto utiliza PostgreSQL como base de datos. Para visualizar los datos y r
 ## Diagrama ER
 
 A continuación se muestra el diagrama Entidad-Relación (ER) del proyecto:
-![Diagrama ER](nodejs-sequelize-restapi/Diagrama_ER.png)
+
+![Diagrama ER](ER_diagram.PNG)
 ___
 
 # Node.js Project whit Sequelize [🇺🇸]
@@ -49,4 +50,5 @@ The project uses PostgreSQL as the database. To visualize data and perform effic
 ## ER Diagram
 
 Below is the Entity-Relationship (ER) diagram for the project:
-![Diagrama ER](nodejs-sequelize-restapi/Diagrama_ER.png)
+
+![Diagrama ER](ER_diagram.PNG)
